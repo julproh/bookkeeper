@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pybookkeeper"
+version = "0.1.0"
+description = "Python app to manage your erdonal finances"
+authors = ["julproh <y.prokhorova>"]
+license="MIT"
+readme = "README.md"
+packages=[{include="bookkeeper"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.0.0"
+pylint = "^3.0.4"
+mypy = "^1.8.0"
+pytest = "^8.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
